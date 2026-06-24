@@ -199,7 +199,7 @@ function LeadFormEngine() {
           <h3 className="h2">Enquiry received thank you{data.name ? `, ${data.name.split(' ')[0]}` : ''}.</h3>
           <p className="lede" style={{maxWidth:'42ch'}}>Our team will review your requirements and reply with a tailored quote, usually within one working day.</p>
           <div className="flex gap-sm" style={{marginTop:8,flexWrap:'wrap',justifyContent:'center'}}>
-            <a className="btn btn-dark" href="tel:+447440586966"><I.phone/> Call us now</a>
+            <a className="btn btn-dark" href="tel:+447440586966"><I.phone style={{width:18,height:18,flexShrink:0}}/> Call us now</a>
             <button className="btn btn-ghost" onClick={() => { setDone(false); setStep(0); }}>Start another enquiry</button>
           </div>
         </div>
@@ -240,7 +240,7 @@ function Closing({ onEnquire, onConsult }) {
         <h2 className="display reveal" style={{marginTop:18}}>Stop babysitting your fulfilment. <span className="serif-i">Start scaling it.</span></h2>
         <p className="lede reveal">Every box we prep to spec, every order we ship on time, is one less thing standing between you and your next sale. Hand the operation to a partner that treats your stock like its own.</p>
         <div className="closing-cta reveal">
-          <a href="tel:+447440586966" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',background:'#fff',color:'var(--navy)',boxShadow:'0 12px 32px rgba(0,0,0,.2)',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap'}}><I.phone style={{width:18,height:18,flexShrink:0}}/> +44 7440 586966</a>
+          <a href="tel:+447440586966" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',background:'#fff',color:'var(--navy)',boxShadow:'0 12px 32px rgba(0,0,0,.2)',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap',overflow:'hidden'}}> +44 7440 586966</a>
           <a href="https://wa.me/447440586966?text=Hi%20Lyzoo%2C%20I'd%20like%20a%20fulfilment%20quote" target="_blank" rel="noopener" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',background:'#25d366',color:'#fff',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap'}}><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.18-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52ZM12 21.94a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.67.96.98-3.57-.24-.37A9.9 9.9 0 0 1 2.06 12C2.06 6.5 6.5 2.06 12 2.06c2.65 0 5.14 1.03 7.01 2.9a9.87 9.87 0 0 1 2.93 7.02c0 5.5-4.44 9.96-9.94 9.96Zm5.44-7.45c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17c-.17.2-.34.22-.64.07a8.1 8.1 0 0 1-2.38-1.47 8.93 8.93 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.19-.24-.57-.48-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.11.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.34Z"/></svg> WhatsApp</a>
           <a href="mailto:info@lyzoo.co.uk" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',background:'#fff',color:'var(--navy)',boxShadow:'0 12px 32px rgba(0,0,0,.2)',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap'}}><I.mail/> info@lyzoo.co.uk</a>
         </div>
@@ -292,7 +292,7 @@ function Footer() {
           <div>
             <h5>Get in touch</h5>
             <div className="f-contact">
-              <div className="ci"><I.phone/><a href="tel:+447440586966">{LEGAL.phone}</a></div>
+              <div className="ci"><I.phone style={{width:18,height:18,flexShrink:0}}/><a href="tel:+447440586966">{LEGAL.phone}</a></div>
               <div className="ci"><I.mail/><a href="mailto:info@lyzoo.co.uk">{LEGAL.email}</a></div>
               <div className="ci"><I.pin/><span>{LEGAL.warehouse}</span></div>
             </div>
@@ -314,7 +314,7 @@ function Footer() {
 function MobileCTA({ onEnquire }) {
   return (
     <div className="mcta">
-      <a className="btn btn-ghost" href="tel:+447440586966" aria-label="Call Lyzoo"><I.phone/></a>
+      <a className="btn btn-ghost" href="https://wa.me/447440586966?text=Hi%20Lyzoo%2C%20I'd%20like%20a%20fulfilment%20quote" target="_blank" rel="noopener" aria-label="WhatsApp Lyzoo" style={{background:'#25d366',border:'none',color:'#fff'}}><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.18-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52ZM12 21.94a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.67.96.98-3.57-.24-.37A9.9 9.9 0 0 1 2.06 12C2.06 6.5 6.5 2.06 12 2.06c2.65 0 5.14 1.03 7.01 2.9a9.87 9.87 0 0 1 2.93 7.02c0 5.5-4.44 9.96-9.94 9.96Zm5.44-7.45c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17c-.17.2-.34.22-.64.07a8.1 8.1 0 0 1-2.38-1.47 8.93 8.93 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.19-.24-.57-.48-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.11.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.34Z"/></svg></a>
       <button className="btn btn-primary" onClick={onEnquire}>Get a fulfilment quote</button>
     </div>
   );
@@ -329,7 +329,7 @@ function ClosingWithFooter({ onEnquire, onConsult }) {
         <h2 className="display reveal" style={{marginTop:18}}>Stop babysitting your fulfilment. <span className="serif-i">Start scaling it.</span></h2>
         <p className="lede reveal" style={{color:'var(--on-dark-muted)'}}>Every box we prep to spec is one less thing standing between you and your next sale. Hand the operation to a partner that treats your stock like its own.</p>
         <div className="closing-cta reveal">
-          <a href="tel:+447440586966" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap',background:'#fff',color:'var(--navy)',boxShadow:'0 12px 32px rgba(0,0,0,.2)'}}><I.phone/> +44 7440 586966</a>
+          <a href="tel:+447440586966" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap',background:'#fff',color:'var(--navy)',boxShadow:'0 12px 32px rgba(0,0,0,.2)'}}> +44 7440 586966</a>
           <a href="https://wa.me/447440586966?text=Hi%20Lyzoo%2C%20I'd%20like%20a%20fulfilment%20quote" target="_blank" rel="noopener" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap',background:'#25d366',color:'#fff'}}><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.18-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52ZM12 21.94a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.67.96.98-3.57-.24-.37A9.9 9.9 0 0 1 2.06 12C2.06 6.5 6.5 2.06 12 2.06c2.65 0 5.14 1.03 7.01 2.9a9.87 9.87 0 0 1 2.93 7.02c0 5.5-4.44 9.96-9.94 9.96Zm5.44-7.45c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17c-.17.2-.34.22-.64.07a8.1 8.1 0 0 1-2.38-1.47 8.93 8.93 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.19-.24-.57-.48-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.11.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.34Z"/></svg> WhatsApp us</a>
           <a href="mailto:info@lyzoo.co.uk" style={{display:'inline-flex',alignItems:'center',gap:'.6em',fontWeight:700,fontSize:'1.06rem',padding:'1.1em 1.8em',borderRadius:'999px',textDecoration:'none',transition:'transform .2s,box-shadow .2s',whiteSpace:'nowrap',background:'#fff',color:'var(--navy)',boxShadow:'0 12px 32px rgba(0,0,0,.2)'}}><I.mail/> info@lyzoo.co.uk</a>
         </div>
